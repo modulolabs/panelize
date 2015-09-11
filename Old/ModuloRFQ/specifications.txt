@@ -1,0 +1,16 @@
+Quantity is 250 panels. Assembled boards may be delivered in panels. Modulo Labs will handle depanelization, programming, and testing.
+
+Lead time 4 weeks.
+
+Part designators are prefixed with a board number. ie, "4-C2". Please see legend.pdf to match board number to location within panel.
+
+RoHS
+
+PCB - FR4 1.6mm, dark purple soldermask, white silkscreen both sides, ENIG. Sample and customer approval of soldermask color required.
+
+Deliver assembled panels. Depanelization, programming, testing, and packaging will be completed by customer.
+
+OLED display modules require hot bar soldering of flex circuit to PCB.
+
+See notes field in BOM for additional part specific assembly requirements.
+
