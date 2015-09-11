@@ -20,7 +20,7 @@ mergeConfigFile = 'merge.cfg'
 centroidFile = 'RFQ/centroid.csv'
 bomFile = 'RFQ/bom.csv'
 tmpDir = 'tmp'
-partDetailsFile = os.path.join(pcbDir,"Panel/config/PartDetails.csv")
+partDetailsFile = os.path.join(pcbDir,"../panelize/config/PartDetails.csv")
 
 os.chdir(configDir)
 

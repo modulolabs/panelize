@@ -37,8 +37,8 @@ for ext,options in layerMap :
 centroidFilename = os.path.join(gerberDir,fileName.replace(".brd",".centroid.csv"))
 bomFilename = os.path.join(gerberDir,fileName.replace(".brd",".bom.csv"))
 
-centroidCmd = 'edit .brd; run ~/integer-labs/pcb/Panel/scripts/centroid.ulp %s ;' % centroidFilename
-bomCmd = 'edit .sch; run ~/integer-labs/pcb/Panel/scripts/bom.ulp %s ;' % bomFilename
+centroidCmd = 'edit .brd; run ~/integer-labs/panelize/scripts/centroid.ulp %s ;' % centroidFilename
+bomCmd = 'edit .sch; run ~/integer-labs/panelize/scripts/bom.ulp %s ;' % bomFilename
 quitCmd = "quit;"
 cmd = " ".join([eagle,"-C",'"' + centroidCmd + bomCmd + quitCmd + '"',boardFile])
 print cmd
