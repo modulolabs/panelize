@@ -171,7 +171,11 @@ class TabsFilter(object) :
         if p0[0] > p1[0] :
             offset *= -1
 
-        for t in [.18, .5, .82] :
+        for t in [-.15, 1.15] :
+            p = (p0[0]*t + p1[0]*(1-t), p1[1]*t + p1[1]*(1-t))
+            self.drillFile.addHit(p)
+
+        for t in [.17, .5, .83] :
             p = (p0[0]*t + p1[0]*(1-t), offset + p1[1]*t + p1[1]*(1-t))
             self.drillFile.addHit(p)
 
@@ -279,7 +283,7 @@ def runFilters(config) :
 
     drillFile = DrillFile()
     drillFile.read('tmp/Modulo.drills.xln')
-    drillFile.setTool(.020)
+    drillFile.setTool(.022)
 
     # The last object in the chain writes the new gerber file
     writer = Writer(os.path.join(outputDir,"Modulo.boardoutline.ger"))

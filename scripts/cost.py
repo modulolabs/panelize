@@ -49,4 +49,4 @@ if __name__ == '__main__' :
     config = eval(file('SmallPanel/panelConfig.json','r').read())
     pcbDir = config['pcbDir']
 
-    calculateCosts(config, os.path.join(pcbDir,"Panel/config/PartDetails.csv"))
+    calculateCosts(config, "config/PartDetails.csv")

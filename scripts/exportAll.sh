@@ -10,3 +10,4 @@
 ./scripts/eagleExport.py ../pcb/TempProbe/TempProbe.brd
 ./scripts/eagleExport.py ../pcb/ParticleBase/ParticleBase.brd
 ./scripts/eagleExport.py ../pcb/Base/Base.brd
+./scripts/eagleExport.py ../pcb/Fiducial/Fiducial.brd
